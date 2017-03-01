@@ -163,7 +163,7 @@ wso2::stats_datasources:
 
 
 wso2::clustering:
-  enabled: t
+  enabled: true
   domain: das.wso2.domain
   local_member_host: "%{::ipaddress}"
   local_member_port: 4000
