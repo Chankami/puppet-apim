@@ -58,10 +58,10 @@ wso2::spark:
   carbon_home_symlink: /home/analytic_symlink
 
 wso2::single_node_deployment:
-  enabled: true
+  enabled: false
 
 wso2::ha_deployment:
-  enabled: false
+  enabled: true
   presenter_enabled: false
   worker_enabled: true
   eventSync:
@@ -163,7 +163,7 @@ wso2::stats_datasources:
 
 
 wso2::clustering:
-  enabled: false
+  enabled: true
   domain: das.wso2.domain
   local_member_host: "%{::ipaddress}"
   local_member_port: 4000
