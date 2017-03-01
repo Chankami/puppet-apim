@@ -87,7 +87,7 @@ class wso2am_analytics (
   validate_hash($spark)
   validate_string($is_datasource)
   validate_hash($single_node_deployment)
-  #validate_hash($ha_deployment)
+  validate_hash($ha_deployment)
   validate_hash($portal)
 
   validate_hash($master_datasources)

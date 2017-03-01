@@ -30,7 +30,7 @@ class wso2am_analytics::params {
     $spark                    = hiera('wso2::spark')
     $is_datasource            = hiera('wso2::is_datasource', undef)
     $single_node_deployment   = hiera('wso2::single_node_deployment')
-    #$ha_deployment            = hiera('wso2::ha_deployment')
+    $ha_deployment            = hiera('wso2::ha_deployment')
     $portal                   = hiera('wso2::portal')
     $type_mapping_string_type_mysql = hiera('wso2::type_mapping_string_type_mysql')
 
@@ -231,6 +231,10 @@ class wso2am_analytics::params {
     $template_list        = [
       'repository/conf/identity/identity.xml',
       'repository/conf/datasources/analytics-datasources.xml',
+      'repository/conf/datasources/metrics-datasources.xml',
+      'repository/deployment/server/jaggeryapps/portal/configs/designer.json',
+      'repository/conf/analytics/spark/spark-defaults.conf',
+      'repository/conf/event-processor.xml',
       'repository/conf/carbon.xml',
       'repository/conf/user-mgt.xml',
       'repository/conf/registry.xml',
