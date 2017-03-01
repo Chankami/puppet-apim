@@ -93,7 +93,7 @@ wso2::registry_mounts:
   enable_cache: true
 
 wso2::is_datasource: wso2_carbon_db
-
+wso2::master_datasources:
  wso2_gov_db:
    name: WSO2_GOV_DB
    description: The datasource used for gov registry
@@ -102,11 +102,11 @@ wso2::is_datasource: wso2_carbon_db
    username: postgres
    password: postgres
    jndi_config: jdbc/WSO2_GOV_DB
-    max_active: 50
-    max_wait: 60000
-    default_auto_commit: false
-    test_on_borrow: "true"
-    validation_interval: 30000
+   max_active: 50
+   max_wait: 60000
+   default_auto_commit: false
+   test_on_borrow: "true"
+   validation_interval: 30000
 
  wso2_user_db:
    name: WSO2_USER_DB
@@ -116,11 +116,11 @@ wso2::is_datasource: wso2_carbon_db
    username: postgres
    password: postgres
    jndi_config: jdbc/WSO2_USER_DB
-    max_active: 50
-    max_wait: 60000
-    default_auto_commit: false
-    test_on_borrow: "true"
-    validation_interval: 30000
+   max_active: 50
+   max_wait: 60000
+   default_auto_commit: false
+   test_on_borrow: "true"
+   validation_interval: 30000
 
 wso2::analytics_datasources:
   wso2_analytics_event_store_db:
