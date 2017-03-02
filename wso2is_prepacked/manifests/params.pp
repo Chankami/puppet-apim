@@ -195,7 +195,6 @@ class wso2is_prepacked::params {
         validation_interval => '30000'
       }
     }
-
     $wso2_user                = 'wso2user'
     $wso2_group               = 'wso2'
     $maintenance_mode         = 'refresh'
