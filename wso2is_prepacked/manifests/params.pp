@@ -196,7 +196,6 @@ class wso2is_prepacked::params {
       }
     }
 
-    $carbon_home_symlink      = "/mnt/${product_name}-${product_version}"
     $wso2_user                = 'wso2user'
     $wso2_group               = 'wso2'
     $maintenance_mode         = 'refresh'
