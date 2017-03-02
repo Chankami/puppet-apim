@@ -55,7 +55,7 @@ wso2::spark:
   master: local
   master_count: 2
   hostname: "%{::ipaddress}"
-  carbon_home_symlink: /home/analytic_symlink
+  carbon_home_symlink: /home/analytic_symlink223
 
 wso2::single_node_deployment:
   enabled: false
@@ -106,6 +106,7 @@ wso2::master_datasources:
    default_auto_commit: false
    test_on_borrow: "true"
    validation_interval: 30000
+
  wso2_gov_db:
    name: WSO2_GOV_DB
    description: The datasource used for gov registry
