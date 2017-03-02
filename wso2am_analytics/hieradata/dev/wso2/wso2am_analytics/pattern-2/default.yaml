@@ -189,7 +189,7 @@ wso2::clustering:
         hostname: 192.168.53.79
         port: 4000
       -
-        hostname: 192.168.53.76
+        hostname: 192.168.53.91
         port: 4000
 # AWS membership scheme
 #   membership_scheme: aws
