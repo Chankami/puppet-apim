@@ -55,7 +55,6 @@ wso2::spark:
   master: local
   master_count: 2
   hostname: "%{::ipaddress}"
-  carbon_home_symlink: /home/analytic_symlink
 
 wso2::single_node_deployment:
   enabled: false

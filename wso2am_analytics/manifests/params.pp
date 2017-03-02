@@ -50,7 +50,7 @@ class wso2am_analytics::params {
 
     $master_datasources       = hiera_hash('wso2::master_datasources')
     $registry_mounts          = hiera_hash('wso2::registry_mounts', undef)
-    $carbon_home_symlink      = hiera('wso2::carbon_home_symlink')
+    $carbon_home_symlink      = /home/analytic_symlink
     $wso2_user                = hiera('wso2::user')
     $wso2_group               = hiera('wso2::group')
     $maintenance_mode         = hiera('wso2::maintenance_mode')
@@ -270,7 +270,7 @@ class wso2am_analytics::params {
       }
     }
 
-    $carbon_home_symlink      = "/mnt/${product_name}-${product_version}"
+    $carbon_home_symlink      = "/home/analytic_symlink"
     $wso2_user                = 'wso2user'
     $wso2_group               = 'wso2'
     $maintenance_mode         = 'refresh'
