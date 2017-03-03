@@ -41,6 +41,7 @@ wso2::portal:
 
 wso2::template_list:
   - repository/conf/datasources/analytics-datasources.xml
+  - repository/conf/datasources/stats-datasources.xml
   - repository/conf/analytics/spark/spark-defaults.conf
   - repository/conf/event-processor.xml
   #  - repository/conf/security/cipher-text.properties
